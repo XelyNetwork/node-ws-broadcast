@@ -47,5 +47,7 @@ app.get('/:room', upgradeWebSocket(async (c) => {
 const server = serve({
   fetch: app.fetch,
   port: parseInt(process.env.PORT ?? 3030)
+}, (info) => {
+  console.log(`Listening on port ${info.port}`)
 })
 injectWebSocket(server)

@@ -1,0 +1,13 @@
+{
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch ./main.js"
+  },
+  "dependencies": {
+    "@hono/node-server": "^1.13.0",
+    "@hono/node-ws": "^1.0.4",
+    "hono": "^4.6.2",
+    "ws": "^8.18.0"
+  }
+}
